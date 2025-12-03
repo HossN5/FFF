@@ -583,6 +583,7 @@ section {
   background: rgba(255, 107, 53, 0.1);
 }
 
+/* Ensure modal displays correctly when show class is added */
 .modal {
   display: none;
   position: fixed;
@@ -596,9 +597,6 @@ section {
   animation: fadeIn 0.3s ease;
   overflow-y: auto;
   padding: 20px;
-  /* Added flex properties to ensure modal is centered when shown */
-  align-items: center;
-  justify-content: center;
 }
 
 .modal.show {
@@ -998,4 +996,3 @@ section {
     grid-template-columns: 1fr;
   }
 }
-
