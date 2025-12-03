@@ -36,11 +36,16 @@ document.querySelectorAll(".skill-card, .project-card, .contact-card").forEach((
 function openDashboardModal(event) {
   if (event) {
     event.preventDefault()
+    event.stopPropagation()
   }
+  console.log("[v0] Opening dashboard modal")
   const modal = document.getElementById("dashboardModal")
   if (modal) {
     modal.classList.add("show")
     document.body.style.overflow = "hidden"
+    console.log("[v0] Modal should be visible now")
+  } else {
+    console.log("[v0] Modal element not found!")
   }
 }
 
